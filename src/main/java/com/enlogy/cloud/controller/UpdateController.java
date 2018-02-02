@@ -27,7 +27,7 @@ public class UpdateController {
 //    }rxretrofit
     @GetMapping(value = "/updateApk")
     public UpdateUrl updateApk(@RequestParam (value = "versionCode")int versionCode){
-       int newApkVersionCode = 2;
+       int newApkVersionCode = 1;
         String url = "http://39.108.5.202:8008/files/communicationassistant.apk";
         UpdateUrl updateUrl = new UpdateUrl();
         if (versionCode != newApkVersionCode )
